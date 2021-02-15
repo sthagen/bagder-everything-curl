@@ -31,11 +31,10 @@ This book project started at the end of September 2015.
 
 ## The book sites
 
-**https://ec.haxx.se** is the home of this book. It features accessible
-links to read the book online in a web version, or download a PDF
-version for offline reading. Unfortunately, the previously provided
-ebook formats are no longer provided by gitbook.com that we use to
-produce the book.
+**https://everything.curl.dev** is the home of this book. It features
+accessible links to read the book online in a web version, or download a PDF
+version for offline reading. Unfortunately, the previously provided ebook
+formats are no longer provided by gitbook.com that we use to produce the book.
 
 **https://github.com/bagder/everything-curl** hosts all the book content.
 
@@ -58,45 +57,72 @@ to make this document better over time.
 Preferably, you could submit
 [errors](https://github.com/bagder/everything-curl/issues) or [pull
 requests](https://github.com/bagder/everything-curl/pulls) on the book's
-Github page.
+GitHub page.
 
 ## Helpers
 
 Lots of people have reported bugs, improved sections or otherwise helped
 making this book the success it is. These friends include the following:
 
+AaronChen0 on github,
+alawvt on github,
+Amin Khoshnood,
+amnkh on github,
 Anders Roxell,
 Angad Gill,
 Aris (Karim) Merchant,
+Ben Bodenmiller,
 Ben Peachey,
+bookofportals on github,
 Carlton Gibson,
 Chris DeLuca,
 Citizen Esosa,
 Dan Fandrich,
-DrDoom74 at Github,
+Daniel Sabsay,
+David Piano,
+DrDoom74 at GitHub,
 Emil Hessman,
+enachos71 on github,
+ethomag on github,
+Frank Dana,
 Frank Hassanabad,
 Gautham B A,
 Geir Hauge,
+Helena Udd,
+Hubert Lin,
+i-ky on github,
+infinnovation-dev on GitHub,
+Jay Ottinger,
 Jay Satiro,
+John Simpson,
+JohnCoconut on github,
 JoyIfBam5,
+lowttl on github,
 Luca Niccoli,
-Manuel,
+Manuel on github,
 Marius Žilėnas,
+Mark Koester,
 Martin van den Nieuwelaar,
+mehandes on github,
+Michael Kaufmann,
 Ms2ger,
 Nick Travers,
-Oscar,
+Nicolas Brassard,
+Oscar on github,
+Patrik Lundin,
+Ryan McQuen,
 Saravanan Musuwathi Kesavan,
 Senthil Kumaran,
+Shusen Liu,
+Spiros Georgaras,
+Stephen,
+Steve Holme,
+strupo on github,
 Viktor Szakats,
 Vitaliy T,
+Wayne Lai
 Wieland Hoffmann,
-alawvt,
-bookofportals,
-ethomag,
-infinnovation-dev on Github,
-mehandes
+谭九鼎
 
 ## License
 
