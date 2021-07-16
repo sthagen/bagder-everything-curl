@@ -8,6 +8,8 @@
 --data
 --data-binary
 --data-urlencode
+--fail
+--fail-with-body
 --ftp-method
 --ftp-pasv
 --ftp-port
@@ -238,20 +240,19 @@ IDN
 Indentation
 IPv4
 IPv6
+IRC
 JavaScript
 json
 keep-alive
 KNOWN_BUGS
 libcurl version
 libidn2
-libmetalink
 libpsl
 libressl
 librtmp
 libssh2
 license
 MesaLink
-Metalink
 MIT
 MITM-proxies
 MQTT

@@ -164,6 +164,8 @@
  - event-driven: [Driving with the "multi_socket" interface](libcurl/drive/multi-socket.md#driving-with-the-"multi_socket"-interface), [Everything is multi](internals.md#everything-is-multi)
 ## F
  - -F: [multipart formpost](usingcurl/uploads.md#multipart-formpost), [Not perfect](usingcurl/copyas.md#not-perfect), [HTTP methods](http.md#http-methods), [Sending such a form with curl](http/multipart.md#sending-such-a-form-with-curl), [-d vs -F](http/postvspost.md#d-vs--f), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - --fail: [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP response codes](http/response.md#http-response-codes)
+ - --fail-with-body: [HTTP response codes](http/response.md#http-response-codes)
  - Firefox: [lib/vtls](source/layout.md#lib/vtls), [Discover your proxy](usingcurl/proxies.md#discover-your-proxy), [SSLKEYLOGFILE](usingcurl/tls/sslkeylogfile.md#sslkeylogfile), [Copy as curl](usingcurl/copyas.md#copy-as-curl), [User-agent](http/requests.md#user-agent)
  - Fragment: [Fragment](cmdline/urls.md#fragment), [Anchors or fragments](http/requests.md#anchors-or-fragments)
  - --ftp-method: [multicwd](usingcurl/ftp/traversedir.md#multicwd)
@@ -177,7 +179,7 @@
  - Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
  - GnuTLS: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library), [OCSP stapling](usingcurl/tls.md#ocsp-stapling), [Proxy types](libcurl/proxies.md#proxy-types)
  - GOPHER: [How it started](project/started.md#how-it-started), [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHER](protocols/curl.md#gopher), [Supported protocols](usingcurl.md#supported-protocols), [Version](usingcurl/version.md#version)
- - GOPHERS: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHERS](protocols/curl.md#gophers)
+ - GOPHERS: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [GOPHERS](protocols/curl.md#gophers), [Supported protocols](usingcurl.md#supported-protocols)
 ## H
  - --header: [Server differences](usingcurl/downloads.md#server-differences), [Proxy headers](usingcurl/proxies.md#proxy-headers), [Customize headers](http/requests.md#customize-headers)
  - Header callback: [Header callback](libcurl/callbacks/header.md#header-callback), [HTTP responses](libcurl-http/responses.md#http-responses)
@@ -186,7 +188,7 @@
  - HTTP redirects: [Short options](cmdline/options.md#short-options), [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP redirects](http/redirects.md#http-redirects), [Submit a login form over HTTP](libcurl/examples/login.md#submit-a-login-form-over-http)
  - HTTP/1.1: [HTTP](protocols/curl.md#http), [Verbose mode](usingcurl/verbose.md#verbose-mode), [--trace and --trace-ascii](usingcurl/verbose/trace.md#trace-and---trace-ascii), [HTTP protocol basics](http/basics.md#http-protocol-basics), [HTTP versions](http/versions.md#http-versions), [The HTTP this generates](http/multipart.md#the-http-this-generates), [GET or POST?](http/redirects.md#get-or-post?), [Request method](http/requests.md#request-method), [HTTP/2](http/http2.md#http/2), [Customize HTTP request headers](libcurl-http/requests.md#customize-http-request-headers), [HTTP versions](libcurl-http/versions.md#http-versions)
  - HTTP/2: [docs](source/layout.md#docs), [nghttp2](source/build/deps.md#nghttp2), [HTTP/2 and HTTP/3](usingcurl/verbose.md#http/2-and-http/3), [Line 4: Features](usingcurl/version.md#line-4:-features), [Available exit codes](usingcurl/returns.md#available-exit-codes), [HTTP versions](http/versions.md#http-versions), [GET or POST?](http/redirects.md#get-or-post?), [HTTP/2](http/http2.md#http/2), [HTTP/3](http/altsvc.md#http/3), [DNS over HTTPS](libcurl/names.md#dns-over-https), [HTTP versions](libcurl-http/versions.md#http-versions), [Expect: headers](libcurl-http/upload.md#expect:-headers)
- - HTTP/3: [Select HTTP/3 backend](source/build/fromsource.md#select-http/3-backend), [HTTP/2 and HTTP/3](usingcurl/verbose.md#http/2-and-http/3), [Line 4: Features](usingcurl/version.md#line-4:-features), [HTTP/3](http/altsvc.md#http/3), [HTTP/3](http/http3.md#http/3), [HTTP versions](libcurl-http/versions.md#http-versions), [Expect: headers](libcurl-http/upload.md#expect:-headers)
+ - HTTP/3: [Select HTTP/3 backend](source/build/fromsource.md#select-http/3-backend), [HTTP/2 and HTTP/3](usingcurl/verbose.md#http/2-and-http/3), [Line 4: Features](usingcurl/version.md#line-4:-features), [HTTP/3](http/altsvc.md#http/3), [HTTP/3](http/http3.md#http/3), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs), [HTTP versions](libcurl-http/versions.md#http-versions), [Expect: headers](libcurl-http/upload.md#expect:-headers)
  - HTTP/3 backend: [Select HTTP/3 backend](source/build/fromsource.md#select-http/3-backend)
  - --http1.1: [HTTP versions](http/versions.md#http-versions)
  - --http2: [HTTP versions](http/versions.md#http-versions), [HTTP/2](http/http2.md#http/2)
@@ -198,6 +200,7 @@
  - Indentation: [Indentation](source/style.md#indentation)
  - IPv4: [Host name or address](cmdline/urls.md#host-name-or-address), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Name resolving](libcurl/names.md#name-resolving)
  - IPv6: [Host name or address](cmdline/urls.md#host-name-or-address), [URL globbing](cmdline/globbing.md#url-globbing), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Version](usingcurl/version.md#version), [Name resolving](libcurl/names.md#name-resolving)
+ - IRC: [How it started](project/started.md#how-it-started), [Project communication](project/comm.md#project-communication)
 ## J
  - JavaScript: [Client differences](usingcurl/downloads.md#client-differences), [PAC](usingcurl/proxies.md#pac), [JavaScript and forms](http/post.md#javascript-and-forms), [JavaScript redirects](http/redirects.md#javascript-redirects), [Figure out what the browser does](http/browserlike.md#figure-out-what-the-browser-does)
  - json: [Arguments with spaces](cmdline/options.md#arguments-with-spaces), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Content-Type](http/post.md#content-type), [POST outside of HTML](http/postvspost.md#post-outside-of-html)
@@ -210,7 +213,6 @@
  - --libcurl: [curl --libcurl](libcurl/--libcurl.md#curl---libcurl)
  - libcurl version: [The latest version?](source/build.md#the-latest-version?), [Line 1: curl](usingcurl/version.md#line-1:-curl), [Available exit codes](usingcurl/returns.md#available-exit-codes), [Which libcurl version](libcurl/api.md#which-libcurl-version)
  - libidn2: [libidn2](source/build/deps.md#libidn2)
- - libmetalink: [libmetalink](source/build/deps.md#libmetalink)
  - libpsl: [libpsl](source/build/deps.md#libpsl)
  - libressl: [Select TLS backend](source/build/fromsource.md#select-tls-backend), [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library)
  - librtmp: [librtmp](source/build/deps.md#librtmp)
@@ -222,8 +224,6 @@
  - --max-filesize: [Maximum filesize](usingcurl/downloads.md#maximum-filesize)
  - --max-time: [Retrying failed attempts](usingcurl/downloads.md#retrying-failed-attempts), [Maximum time allowed to spend](usingcurl/timeouts.md#maximum-time-allowed-to-spend)
  - MesaLink: [Build to use a TLS library](source/build/tls.md#build-to-use-a-tls-library)
- - Metalink: [Line 4: Features](usingcurl/version.md#line-4:-features), [Metalink](usingcurl/downloads.md#metalink)
- - --metalink: [Metalink](usingcurl/downloads.md#metalink)
  - MIT: [License](opensource/license.md#license)
  - MITM-proxies: [MITM-proxies](usingcurl/proxies.md#mitm-proxies)
  - MQTT: [What protocols does curl support?](protocols/protocols.md#what-protocols-does-curl-support?), [MQTT](protocols/curl.md#mqtt), [Supported protocols](usingcurl.md#supported-protocols), [Line 3: Protocols](usingcurl/version.md#line-3:-protocols), [MQTT](usingcurl/mqtt.md#mqtt)
@@ -233,7 +233,7 @@
  - --negotiate: [Network leakage](cmdline/passwords.md#network-leakage), [HTTP authentication](http/auth.md#http-authentication)
  - --netrc-file: [Enable netrc](usingcurl/netrc.md#enable-netrc)
  - --netrc-optional: [Enable netrc](usingcurl/netrc.md#enable-netrc)
- - nghttp2: [nghttp2](source/build/deps.md#nghttp2)
+ - nghttp2: [nghttp2](source/build/deps.md#nghttp2), [Which libcurl version runs](libcurl/api.md#which-libcurl-version-runs)
  - nix: [nix](get/linux.md#nix)
  - --no-eprt: [Active connections](usingcurl/ftp/twoconnections.md#active-connections)
  - --no-epsv: [Passive connections](usingcurl/ftp/twoconnections.md#passive-connections)
@@ -255,8 +255,8 @@
  - --post303: [Decide what method to use in redirects](http/redirects.md#decide-what-method-to-use-in-redirects)
  - Progress callback: [timer_callback](libcurl/drive/multi-socket.md#timer_callback), [Progress callback](libcurl/callbacks/progress.md#progress-callback)
  - pronunciation: [Pronunciation](project/name.md#pronunciation)
- - proxy: [How it started](project/started.md#how-it-started), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Line 4: Features](usingcurl/version.md#line-4:-features), [Intermediaries' fiddlings](usingcurl/downloads.md#intermediaries'-fiddlings), [Proxies](usingcurl/proxies.md#proxies), [Available exit codes](usingcurl/returns.md#available-exit-codes), [CONNECT response codes](http/response.md#connect-response-codes), [HTTP authentication](http/auth.md#http-authentication), [Proxies](libcurl/proxies.md#proxies), [Available information](libcurl/getinfo.md#available-information), [Verification](libcurl/tlsoptions.md#verification), [HTTP proxy](libcurl-http.md#http-proxy)
  - --proxy: [HTTP](usingcurl/proxies.md#http), [HTTP authentication](http/auth.md#http-authentication)
+ - proxy: [How it started](project/started.md#how-it-started), [Available --write-out variables](usingcurl/verbose/writeout.md#available---write-out-variables), [Line 4: Features](usingcurl/version.md#line-4:-features), [Intermediaries' fiddlings](usingcurl/downloads.md#intermediaries'-fiddlings), [Proxies](usingcurl/proxies.md#proxies), [Available exit codes](usingcurl/returns.md#available-exit-codes), [CONNECT response codes](http/response.md#connect-response-codes), [HTTP authentication](http/auth.md#http-authentication), [Proxies](libcurl/proxies.md#proxies), [Available information](libcurl/getinfo.md#available-information), [Verification](libcurl/tlsoptions.md#verification), [HTTP proxy](libcurl-http.md#http-proxy)
  - --proxy-user: [Proxy authentication](usingcurl/proxies.md#proxy-authentication), [HTTP authentication](http/auth.md#http-authentication)
  - --proxy1.0: [HTTP proxy tunneling](usingcurl/proxies.md#http-proxy-tunneling)
  - --proxytunnel: [HTTP proxy tunneling](usingcurl/proxies.md#http-proxy-tunneling)
@@ -331,8 +331,8 @@
  - --trace-time: [--trace-time](usingcurl/verbose/trace.md#trace-time)
  - transfer-encoding: [Pass on transfer encoding](http/response.md#pass-on-transfer-encoding), [Chunked encoded POSTs](http/post.md#chunked-encoded-posts)
 ## U
- - -U: [Proxy authentication](usingcurl/proxies.md#proxy-authentication)
  - -u: [Passwords and snooping](cmdline/passwords.md#passwords-and-snooping), [Authentication](usingcurl/ftp.md#authentication), [URLs](usingcurl/scpsftp.md#urls), [IMAP](usingcurl/reademail.md#imap), [HTTP authentication](http/auth.md#http-authentication), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -U: [Proxy authentication](usingcurl/proxies.md#proxy-authentication)
  - Ubuntu: [Ubuntu and Debian](get/linux.md#ubuntu-and-debian)
  - URL Globbing: [URL globbing](cmdline/globbing.md#url-globbing)
 ## V
@@ -345,8 +345,8 @@
  - Write callback: [Write callback](libcurl/callbacks/write.md#write-callback), [Get a HTML page in memory](libcurl/examples/getinmem.md#get-a-html-page-in-memory), [HTTP responses](libcurl-http/responses.md#http-responses)
  - --write-out: [--write-out](usingcurl/verbose/writeout.md#write-out), [HTTP response codes](http/response.md#http-response-codes)
 ## X
- - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
  - -X: [Request method](http/requests.md#request-method), [PUT](http/put.md#put), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet)
+ - -x: [HTTP](usingcurl/proxies.md#http), [curl HTTP cheat sheet](http/cheatsheet.md#curl-http-cheat-sheet), [Proxy environment variables](libcurl/proxies.md#proxy-environment-variables)
 ## Y
  - yum: [Redhat and Centos](get/linux.md#redhat-and-centos)
 ## Z

@@ -33,7 +33,7 @@ sequence. That is a colon and two forward slashes. There exists URL formats
 with only one slash, but curl does not support any of them. There are two
 additional notes to be aware of, about the number of slashes:
 
-curl allow some illegal syntax and try to correct it internally; so it will
+curl allows some illegal syntax and tries to correct it internally; so it will
 also understand and accept URLs with one or three slashes, even though they
 are in fact not properly formed URLs. curl does this because the browsers
 started this practice so it has lead to such URLs being used in the wild every
@@ -70,6 +70,14 @@ protocol. This heuristic is based on the fact that servers traditionally used
 to be named like that. The protocols that are detected this way are FTP, DICT,
 LDAP, IMAP, SMTP and POP3. Any other host name in a scheme-less URL will make
 curl default to HTTP.
+
+For example, this gets a file from an FTP site:
+
+    curl ftp.funet.fi/README
+    
+While this gets data from a HTTP server:
+
+    curl example.com
 
 You can modify the default protocol to something other than HTTP with the
 `--proto-default` option.
