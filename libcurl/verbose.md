@@ -37,23 +37,23 @@ that callback instead of its internal handling.
 
 The trace callback should match a prototype like this:
 
-    int my_trace(CURL *handle, curl_infotype type, char *ptr, size_t size,
-                 void *userp);
+    int my_trace(CURL *handle, curl_infotype type, char *data, size_t size,
+                 void *user);
 
 **handle** is the easy handle it concerns, **type** describes the particular
 data passed to the callback (data in/out, header in/out, TLS data in/out and
-"text"), **ptr** points to the data being **size** number of bytes. **userp**
-is the custom pointer you set with `CURLOPT_DEBUGDATA`.
+"text"), **data** is a pointer pointing to the data being **size** number of
+bytes. **user** is the custom pointer you set with `CURLOPT_DEBUGDATA`.
 
-The data pointed to by **ptr** *will not* be zero terminated, but will be
+The data pointed to by **data** *will not* be zero terminated, but will be
 exactly of the size as told by the **size** argument.
 
 The callback must return 0 or libcurl will consider it an error and abort the
 transfer.
 
-On the curl web site, we host an example called
-[debug.c](https://curl.se/libcurl/c/debug.html) that includes a simple
-trace function to get inspiration from.
+On the curl website, we host an example called
+[debug.c](https://curl.se/libcurl/c/debug.html) that includes a simple trace
+function to get inspiration from.
 
 There are also additional details in the [CURLOPT_DEBUGFUNCTION man
 page](https://curl.se/libcurl/c/CURLOPT_DEBUGFUNCTION.html).

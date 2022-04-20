@@ -34,9 +34,7 @@ When replying to a message from the list, make sure that you do "group reply"
 or "reply to all", and not just reply to the author of the single mail you
 reply to.
 
-We are actively discouraging replying back to the single person by setting the
-`Reply-To:` field in outgoing mails back to the mailing list address, making
-it harder for people to mail the author only by mistake.
+We are actively discouraging replying back to just a single person privately. Keep follow-ups on discussions on the list.
 
 #### Use a sensible subject
 
@@ -56,7 +54,7 @@ This is why top posting is so bad:
     A: Because it messes up the order in which people normally read text.
     Q: Why is top-posting such a bad thing?
     A: Top-posting.
-    Q: What is the most annoying thing in e-mail?
+    Q: What is the most annoying thing in email?
 
 Apart from the screwed-up read order (especially when mixed together in a
 thread when someone responds using the mandated bottom-posting style), it also

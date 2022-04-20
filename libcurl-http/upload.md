@@ -10,15 +10,16 @@ provide the data to upload.
 ## HTTP POST
 
 POST is typically the HTTP method to pass data to a remote web application. A
-common way to do that in browsers is by filling in a HTML form and pressing
-submit. It is the standard way for a HTTP request to pass on data to the
+common way to do that in browsers is by filling in an HTML form and pressing
+submit. It is the standard way for an HTTP request to pass on data to the
 server. With libcurl you normally provide that data as a pointer and a length:
 
     curl_easy_setopt(easy, CURLOPT_POSTFIELDS, dataptr);
     curl_easy_setopt(easy, CURLOPT_POSTFIELDSIZE, (long)datalength);
 
 Or you tell libcurl that it is a post but would prefer to have libcurl instead
-get the data by using the regular [read callback](callback-read.md):
+get the data by using the regular [read
+callback](../libcurl/callbacks/read.md):
 
     curl_easy_setopt(easy, CURLOPT_POST, 1L);
     curl_easy_setopt(easy, CURLOPT_READFUNCTION, read_callback);
@@ -30,7 +31,7 @@ application/x-www-form-urlencoded`.
 
 A multipart formpost is still using the same HTTP method POST; the difference
 is only in the formatting of the request body. A multipart formpost is a
-series of separate "parts", separated by MIME-style boundary strings. There's
+series of separate "parts", separated by MIME-style boundary strings. There is
 no limit to how many parts you can send.
 
 Each such part has a name, a set of headers and a few other properties.
@@ -38,8 +39,8 @@ Each such part has a name, a set of headers and a few other properties.
 libcurl offers a set of convenience functions for constructing such a series
 of parts and to send that off to the server, all prefixed with
 `curl_mime`. Create a multipart post and for each part in the data you set the
-name, the data and perhaps additional meta-data. A very basic setup might look
-like this:
+name, the data and perhaps additional meta-data. A basic setup might look like
+this:
 
     /* Create the form */
     form = curl_mime_init(curl);
@@ -53,7 +54,7 @@ Then you pass that post to libcurl like this:
 
     curl_easy_setopt(easy, CURLOPT_MIMEPOST, form);
 
-(`curl_formadd` is the former API to build multi-part fromposts with but we no
+(`curl_formadd` is the former API to build multi-part formposts with but we no
 longer recommend using that)
 
 
@@ -72,9 +73,9 @@ destination:
 
 If you for some reason do not know the size of the upload before the transfer
 starts, and you are using HTTP 1.1 you can add a `Transfer-Encoding: chunked`
-header with [CURLOPT_HTTPHEADER](libcurl-http-requests.md). For HTTP 1.0 you
-must provide the size before hand and for HTTP 2 and later, neither the size
-nor the extra header is needed.
+header with [CURLOPT_HTTPHEADER](requests.md). For HTTP 1.0 you must provide
+the size before hand and for HTTP 2 and later, neither the size nor the extra
+header is needed.
 
 ## Expect: headers
 
@@ -84,11 +85,11 @@ way to reject the transfer early and save the client from having to send a lot
 of data in vain before the server gets a chance to decline.
 
 The header is added by libcurl if HTTP uploading is done with `CURLOPT_UPLOAD`
-or if it is asked to do a HTTP POST for which the body size is either unknown
+or if it is asked to do an HTTP POST for which the body size is either unknown
 or known to be larger than 1024 bytes.
 
 A libcurl-using client can explicitly disable the use of the `Expect:` header
-with the [CURLOPT_HTTPHEADER](libcurl-http-requests.md) option.
+with the [CURLOPT_HTTPHEADER](requests.md) option.
 
 This header is not used with HTTP/2 or HTTP/3.
 

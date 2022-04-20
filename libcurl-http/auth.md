@@ -3,9 +3,9 @@
 libcurl supports a wide variety of HTTP authentication schemes.
 
 Note that this way of authentication is different than the otherwise widely
-used scheme on the web today where authentication is performed by a HTTP POST
+used scheme on the web today where authentication is performed by an HTTP POST
 and then keeping state in cookies. See [Cookies with
-libcurl](libcurl-http-cookies.md) for details on how to do that.
+libcurl](cookies.md) for details on how to do that.
 
 ## User name and password
 
@@ -19,7 +19,7 @@ separately:
 
     curl_easy_setopt(curl, CURLOPT_PASSWORD, "secret");
 
-That's all you need. This will make libcurl switch on its default
+That is all you need. This will make libcurl switch on its default
 authentication method for this transfer: *HTTP Basic*.
 
 ## Authentication required
@@ -82,7 +82,16 @@ transfer like this (it still needs user name and password set as well):
 
 ## Bearer
 
-TBD
+To pass on an OAuth 2.0 Bearer Access Token in a request, use
+`CURLOPT_XOAUTH2_BEARER` for example:
+
+    CURL *curl = curl_easy_init();
+    if(curl) {
+      curl_easy_setopt(curl, CURLOPT_URL, "pop3://example.com/");
+      curl_easy_setopt(curl, CURLOPT_XOAUTH2_BEARER, "1ab9cb22ba269a7");
+      ret = curl_easy_perform(curl);
+      curl_easy_cleanup(curl);
+    }
 
 ## Try-first
 

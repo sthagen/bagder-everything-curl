@@ -45,20 +45,20 @@ clients use TCP port 70.
 
 ## GOPHERS
 
-Gopher over TLS. A recent extension to the very old protocol.
+Gopher over TLS. A recent extension to the old protocol.
 
 ## HTTP
 
 The Hypertext Transfer Protocol, HTTP, is the most widely used protocol for
 transferring data on the web and over the Internet. See RFC 7230 for HTTP/1.1
-and RFC 7540 for [HTTP/2](http-http2.md). HTTP servers and clients use TCP
+and RFC 7540 for [HTTP/2](../http/http2.md). HTTP servers and clients use TCP
 port 80.
 
 ## HTTPS
 
 Secure HTTP is HTTP done over an SSL/TLS connection. See RFC 2818. HTTPS
 servers and clients use TCP port 443, unless they speak
-[HTTP/3](http-http3.md) which then uses QUIC and is done over UDP...
+[HTTP/3](../http/http3.md) which then uses QUIC and is done over UDP.
 
 ## IMAP
 
@@ -147,9 +147,9 @@ the `STARTTLS` command. See RFC 3207.
 
 ## SMTPS
 
-Secure SMTP, sometimes called SSMTP, is SMTP done over an SSL/TLS connection.
-Such connections implicitly start out using SSL/TLS and as such servers and
-clients use TCP port 465 to communicate with each other. See RFC 8314.
+Secure SMTP, is SMTP done over an SSL/TLS connection. Such connections
+implicitly start out using SSL/TLS and as such servers and clients use TCP
+port 465 to communicate with each other. See RFC 8314.
 
 ## TELNET
 

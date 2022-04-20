@@ -15,9 +15,9 @@ anyone can redistribute curl in source format or built into binary form.
 ### Counting downloads
 
 The curl command-line tool and the libcurl library are available for download
-for most operating systems via the curl web site, they are provided via third
+for most operating systems via the curl website, they are provided via third
 party installers to a bunch and they come installed by default with even more
-operating systems. This makes counting downloads from the curl web site
+operating systems. This makes counting downloads from the curl website
 completely inappropriate as a means of measurement.
 
 ### Finding users
@@ -32,14 +32,14 @@ the Internet, the occasional "about box" or license agreement mentioning curl
 or that authors ask for help and tell us about their use.
 
 The curl license says users need to repeat it somewhere, like in the
-documentation, but that's not easy for us to find in many cases and it's also
+documentation, but that is not easy for us to find in many cases and it's also
 not easy for us to do anything about should they decide not to follow the
 small license requirement.
 
 ### Command-line tool users
 
 The command-line tool curl is widely used by programmers around the world in
-shell and batch scripts, to debug servers and to test out things. There's no
+shell and batch scripts, to debug servers and to test out things. There is no
 doubt it is used by millions every day.
 
 ### Embedded library
@@ -61,7 +61,9 @@ and printers.
 A fair number of best-selling games are also using libcurl, on Windows and
 game consoles.
 
-### In web site backends
+![different devices, tool, applications and services that all run curl](curl-runs-in-all-your-devices.jpg)
+
+### In website backends
 
 The libcurl binding for PHP was one of, if not the, first bindings for libcurl
 to really catch on and get used widely. It quickly got adopted as a default
@@ -80,7 +82,7 @@ in the products. We usually only find out they do by accident, by reading
 about dialogues, documentation and license agreements. Of course some
 companies also just flat out tell us.
 
-We used to collect names of companies and products on our web site of users
+We used to collect names of companies and products on our website of users
 that use the project's products "in commercial environments". We did this
 mostly just to show-off to other big brands that if these other guys can build
 products that depend on us, maybe you can, too?

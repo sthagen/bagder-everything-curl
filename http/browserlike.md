@@ -22,8 +22,8 @@ The slightly more effective way, that also works even for the cases when the
 page is shock-full of obfuscated JavaScript, is to run the browser and monitor
 what HTTP operations it performs.
 
-The [Copy as curl](usingcurl-copyas.md) section describes how you can record a
-browser's request and easily convert that to a curl command line.
+The [Copy as curl](../usingcurl/copyas.md) section describes how you can
+record a browser's request and easily convert that to a curl command line.
 
 Those copied curl command lines are often not good enough though since they
 tend to copy *exactly* that request, while you probably want to be a bad bit
@@ -36,7 +36,7 @@ A lot of the web today works with a user name and password login prompt
 somewhere. In many cases you even logged in a while ago with your browser but
 it has kept the state and keeps you logged in.
 
-The logged-in state is almost always done by using [cookies](http-cookies.md).
+The logged-in state is almost always done by using [cookies](cookies.md).
 A common operation would be to first login and save the returned cookies in a
 file, and then let the site update the cookies in the subsequent command lines
 when you traverse the site with curl.
@@ -44,10 +44,10 @@ when you traverse the site with curl.
 ## Web logins and sessions
 
 The site at https://example.com/ features a login prompt. The login on the web
-site is a HTML form to which you send a [HTTP POST](http-post.md) to. Save the
+site is an HTML form to which you send a [HTTP POST](post.md) to. Save the
 response cookies and the response (HTML) output.
 
-Although the login page is visible (if you'd use a browser) on
+Although the login page is visible (if you would use a browser) on
 https://example.com/, the HTML form tag on that page informs you about which
 exact URL to send the POST to, using the `action` parameter.
 
@@ -77,9 +77,9 @@ tag anyway, you could do something like this first:
 
     curl -c cookies https://example.com/ -o loginform
 
-You would often need a HTML parser or some scripting language to extract the id
-field from there and then you can proceed and login as mentioned above, but
-with the added cookie loading (I'm splitting the line into two lines to make
+You would often need an HTML parser or some scripting language to extract the
+id field from there and then you can proceed and login as mentioned above, but
+with the added cookie loading (I am splitting the line into two lines to make
 it more readable):
 
     curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
@@ -89,12 +89,12 @@ You can see that it uses both `-b` for reading cookies from the file and `-c`
 to store cookies again, for when the server sends back updated cookies.
 
 Always, *always*, add `-v` to the command lines when working out the
-details. See also the [verbose](usingcurl-verbose.md) section for more details
-on that.
+details. See also the [verbose](../usingcurl/verbose.md) section for more
+details on that.
 
 ## Redirects
 
-It is common for servers to use [redirects](http-redirects.md) when responding
+It is common for servers to use [redirects](redirects.md) when responding
 to a login POST. It is so common I would probably say it is rare that it is
 not solved with a redirect.
 
@@ -126,3 +126,13 @@ then makes it:
 
     curl -d user=daniel -d secret=qwerty -d id=bc76 https://example.com/login.cgi \
     -b cookies -c cookies -L -e "https://example.com/" -o out
+
+## TLS fingerprinting
+
+Anti-bot detections nowadays use TLS fingerprinting to figure out whether a
+request is coming from a browser. Curl's fingerprint can vary depending on your
+environment and most likely is different from those of browsers. Curl's CLI
+does not have options to change all the various parts of the fingerprint,
+however an advanced user can customize the fingerprint through the use of
+libcurl and by compiling curl from source themselves.
+

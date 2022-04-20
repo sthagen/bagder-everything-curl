@@ -55,7 +55,7 @@ defined as:
 
     #define LIBCURL_VERSION_NUM 0xXXYYZZ
 
-Where XX, YY and ZZ are the main version, release and patch numbers in
+Where `XX` , `YY` and `ZZ` are the main version, release and patch numbers in
 hexadecimal. All three number fields are always represented using two digits
 (eight bits each). 1.2.0 would appear as "0x010200" while version 9.11.7
 appears as "0x090b07".
@@ -68,7 +68,7 @@ This number is also available as three separate defines:
 
 These defines are, of course, only suitable to figure out the version number
 built *just now* and they will not help you figuring out which libcurl version
-that is used at run-time three years from now.
+that is used at runtime three years from now.
 
 ### Which libcurl version runs
 
@@ -89,7 +89,7 @@ it can return.
 
 You call the function like this:
 
-   curl_version_info_data *ver = curl_version_info( CURLVERSION_NOW );
+    curl_version_info_data *version = curl_version_info( CURLVERSION_NOW );
 
 The data will then be pointing at struct that has or at least can have the
 following layout:

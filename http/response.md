@@ -35,18 +35,18 @@ The first digit of the HTTP response code is a kind of "error class":
  - 2xx: success
  - 3xx: a redirect
  - 4xx: the client asked for something the server could not or would not deliver
- - 5xx: there's problem in the server
+ - 5xx: there is a problem in the server
 
 Remember that you can use curl's `--write-out` option to extract the response
-code. See the [--write-out](usingcurl-writeout.md) section.
+code. See the [--write-out](../usingcurl/verbose/writeout.md) section.
 
 To make curl return an error for response codes >= 400, you need to use
 `--fail` or `--fail-with-body`. Then curl will exit with error code 22 for
-such occurrances.
+such occurrences.
 
 ### CONNECT response codes
 
-Since there can be a HTTP request and a separate CONNECT request in the same
+Since there can be an HTTP request and a separate CONNECT request in the same
 curl transfer, we often separate the CONNECT response (from the proxy) from
 the remote server's HTTP response.
 
@@ -58,17 +58,17 @@ numeric range and you can use `--write-out` to extract that code as well.
 An HTTP 1.1 server can decide to respond with a "chunked" encoded response, a
 feature that was not present in HTTP 1.0.
 
-When receiving a chunked response, there's no Content-Length: for the response
-to indicate its size. Instead, there's a `Transfer-Encoding: chunked` header
-that tells curl there's chunked data coming and then in the response body, the
-data comes in a series of "chunks". Every individual chunk starts with the
-size of that particular chunk (in hexadecimal), then a newline and then the
-contents of the chunk. This is repeated over and over until the end of the
-response, which is signalled with a zero sized chunk. The point of this
-response encoding is for the client to be able to figure out when the
-response has ended even though the server did not know the full size before
-it started to send it. This is usually the case when the response is dynamic
-and generated at the point when the request comes.
+When receiving a chunked response, there is no Content-Length: for the
+response to indicate its size. Instead, there is a `Transfer-Encoding:
+chunked` header that tells curl there is chunked data coming and then in the
+response body, the data comes in a series of "chunks". Every individual chunk
+starts with the size of that particular chunk (in hexadecimal), then a newline
+and then the contents of the chunk. This is repeated over and over until the
+end of the response, which is signaled with a zero sized chunk. The point of
+this response encoding is for the client to be able to figure out when the
+response has ended even though the server did not know the full size before it
+started to send it. This is usually the case when the response is dynamic and
+generated at the point when the request comes.
 
 Clients like curl will, of course, decode the chunks and not show the chunk
 sizes to users.
@@ -78,9 +78,9 @@ sizes to users.
 Responses over HTTP can be sent in compressed format. This is most commonly
 done by the server when it includes a `Content-Encoding: gzip` in the response
 as a hint to the client. Compressed responses make a lot of sense when either
-static resources are sent (that were compressed previously) or even in
-run-time when there's more CPU power available than bandwidth. Sending a much
-smaller amount of data is often preferred.
+static resources are sent (that were compressed previously) or even in runtime
+when there is more CPU power available than bandwidth. Sending a much smaller
+amount of data is often preferred.
 
 You can ask curl to both ask for compressed content *and* automatically and
 transparently uncompress gzipped data when receiving content encoded gzip (or

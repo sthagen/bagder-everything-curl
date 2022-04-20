@@ -1,6 +1,6 @@
 ## libcurl HTTP download
 
-The GET method is the default method libcurl uses when a HTTP URL is requested
+The GET method is the default method libcurl uses when an HTTP URL is requested
 and no particular other method is asked for. It asks the server for a
 particular resource—the standard HTTP download request:
 
@@ -11,13 +11,13 @@ particular resource—the standard HTTP download request:
 Since options set in an easy handle are sticky and remain until changed, there
 may be times when you have asked for another request method than GET and then
 want to switch back to GET again for a subsequent request. For this purpose,
-there's the `CURLOPT_HTTPGET` option:
+there is the `CURLOPT_HTTPGET` option:
 
     curl_easy_setopt(easy, CURLOPT_HTTPGET, 1L);
 
 ### Download headers too
 
-A HTTP transfer also includes a set of response headers. Response headers are
+An HTTP transfer also includes a set of response headers. Response headers are
 metadata associated with the actual payload, called the response body. All
 downloads will get a set of headers too, but when using libcurl you can select
 whether you want to have them downloaded (seen) or not.
@@ -31,8 +31,8 @@ body is, by using `CURLOPT_HEADER`:
     curl_easy_perform(easy);
 
 Or you can opt to store the headers in a separate download file, by relying on
-the default behaviors of the [write](callback-write.md) and [header
-callbacks](callback-header.md):
+the default behaviors of the [write](../libcurl/callbacks/write.md) and
+[header callbacks](../libcurl/callbacks/header.md):
 
     easy = curl_easy_init();
     FILE *file = fopen("headers", "wb");

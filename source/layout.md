@@ -1,8 +1,8 @@
 ## Code layout
 
 The curl source code tree is neither large nor complicated. A key thing to
-remember is, perhaps, that libcurl is the library and that library is the
-biggest component of the curl command-line tool.
+remember is, that libcurl is the library and that this library is the biggest
+component of the curl command-line tool.
 
 ### root
 
@@ -44,32 +44,28 @@ source files may contain code that is not used in your particular build.
 ### lib/vtls
 
 The VTLS sub section within libcurl is the home of all the TLS backends
-libcurl can be built to support. The "virtual" TLS internal API is a common
-API that is used within libcurl to access TLS and crypto functions without the
-main code knowing exactly which TLS library that is used. This allows the
-person who builds libcurl to select from a wide variety TLS libraries to build
-with.
+libcurl can be built to support. The "virtual" TLS internal API is a backend
+agnostic API used internally to access TLS and crypto functions without the
+main code knowing which specific TLS library is used. This allows the person
+who builds libcurl to select from a wide variety TLS libraries to build with.
 
 We also maintain a [SSL comparison
-table](https://curl.se/docs/ssl-compared.html) on the web site to aid
+table](https://curl.se/docs/ssl-compared.html) on the website to aid
 users.
 
-- OpenSSL: the (by far) most popular TLS library.
-- BoringSSL: an OpenSSL fork maintained by Google. It will make libcurl disable a
-  few features due to lacking some functionality in the library.
-- LibreSSL: an OpenSSL fork maintained by the OpenBSD team.
-- NSS: a full-blown TLS library perhaps most known for being used by the
-  Firefox web browser. This was the default TLS backend for curl on Fedora and
-  Redhat systems for a while in the past.
-- GnuTLS: a full-blown TLS library used by default by the Debian packaged curl.
-- mbedTLS: (formerly known as PolarSSL) is a TLS library more targeted
-  towards the embedded market.
-- WolfSSL: (formerly known as cyaSSL) is a TLS library more targeted
-  towards the embedded market.
-- MesaLink: a TLS library written in rust
-- Schannel: the native TLS library on Windows.
-- SecureTransport: the native TLS library on Mac OS X.
+- AmiSSL: an OpenSSL fork made for AmigaOS (uses `openssl.c`)
+- BearSSL
+- BoringSSL: an OpenSSL fork maintained by Google. (uses `openssl.c`)
+- GnuTLS
 - GSKit: the native TLS library on OS/400.
+- LibreSSL: an OpenSSL fork maintained by the OpenBSD team. (uses `openssl.c`)
+- mbedTLS
+- NSS: TLS library most known for being used by the Firefox web browser.
+- OpenSSL
+- rustls: a TLS library written in rust
+- Schannel: the native TLS library on Windows.
+- Secure Transport: the native TLS library on macOS
+- wolfSSL
 
 ### src
 
@@ -96,9 +92,9 @@ is `#include <curl/curl.h>`
 
 The main documentation location. Text files in this directory are typically
 plain text files. We have slowly started to move towards Markdown format so a
-few (but growing number of) files use the .md extension to signify that.
+few (but growing number of) files use the `.md` extension to signify that.
 
-Most of these documents are also shown on the curl web site automatically
+Most of these documents are also shown on the curl website automatically
 converted from text to a web friendly format/look.
 
 - `BINDINGS`: lists all known libcurl language bindings and where to find them
@@ -170,7 +166,7 @@ different libcurl functions.
 Contains around 100 stand-alone examples that are meant to help readers
 understand how libcurl can be used.
 
-See also the [libcurl examples](libcurl-examples.md) section of this book.
+See also the [libcurl examples](../libcurl/examples.md) section of this book.
 
 ### scripts
 
@@ -179,12 +175,13 @@ Handy scripts.
 - `contributors.sh`: extracts all contributors from the git repository since a
   given hash/tag. The purpose is to generate a list for the RELEASE-NOTES file
   and to allow manually added names to remain in there even on updates. The
-  script uses the 'THANKS-filter` file to rewrite some names.  
+  script uses the `THANKS-filter` file to rewrite some names.
 - `contrithanks.sh`: extracts contributors from the git repository since a
   given hash/tag, filters out all the names that are already mentioned in
   `THANKS`, and then outputs `THANKS` to stdout with the list of new
-  contributors appended at the end; it's meant to allow easier updates of the THANKS
-  document. The script uses the 'THANKS-filter` file to rewrite some names.
+  contributors appended at the end; it's meant to allow easier updates of the
+  THANKS document. The script uses the `THANKS-filter` file to rewrite some
+  names.
 - `log2changes.pl`: generates the `CHANGES` file for releases, as used by the
   release script. It simply converts git log output.
 - `zsh.pl`: helper script to provide curl command-line completions to users of

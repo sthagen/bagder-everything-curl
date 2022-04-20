@@ -8,6 +8,8 @@
 --data
 --data-binary
 --data-urlencode
+--etag-compare
+--etag-save
 --fail
 --fail-with-body
 --ftp-method
@@ -16,10 +18,13 @@
 --ftp-skip-pasv-ip
 --get
 --header
+--hsts
+--http0.9
 --http1.1
 --http2
 --http2-prior-knowledge
 --http3
+--json
 --keepalive-time
 --libcurl
 --limit-rate
@@ -36,6 +41,8 @@
 --ntlm
 --parallel
 --parallel-max
+--parallel-immediate
+--path-as-is
 --post301
 --post302
 --post303
@@ -43,8 +50,14 @@
 --proxy-user
 --proxy1.0
 --proxytunnel
+--quote
 --remote-name-all
 --resolve
+--retry
+--retry-all-errors
+--retry-connrefused
+--retry-delay
+--retry-max-time
 --show-error
 --silent
 --socks4
@@ -53,6 +66,9 @@
 --socks5-hostname
 --speed-limit
 --speed-time
+--tftp-blksize
+--tftp-no-options
+--time-cond
 --tr-encoding
 --trace
 --trace-ascii
@@ -67,12 +83,14 @@
 -K
 -L
 -O
+-Q
 -T
 -U
 -u
 -X
 -x
 -Z
+-z
 .netrc
 /etc/hosts
 <curl/curl.h>
@@ -81,6 +99,7 @@ apt
 Arch Linux
 BearSSL
 BoringSSL
+brotli
 bugreports
 c-ares
 C89
@@ -104,6 +123,9 @@ curl-users
 curl_easy_cleanup
 curl_easy_getinfo
 curl_easy_init
+curl_easy_option_by_id
+curl_easy_option_by_next
+curl_easy_option_by_next
 curl_easy_perform
 curl_easy_reset
 curl_easy_setopt
@@ -136,14 +158,19 @@ curl_url_get
 curl_url_set
 curl_version_info
 CURLE_ABORTED_BY_CALLBACK
+CURLHSTS_ENABLE
+CURLHSTS_READONLYFILE
 CURLINFO_CERTINFO
 CURLINFO_CONTENT_TYPE
 CURLINFO_EFFECTIVE_URL
 CURLINFO_FILETIME
 CURLINFO_TOTAL_TIME_T
+CURLMOPT_PIPELINING
 CURLMOPT_SOCKETFUNCTION
 CURLMOPT_TIMERFUNCTION
-CURLOPT_CLOSEOCKETFUNCTION
+CURLOPT_ALTSVC
+CURLOPT_ALTSVC_CTRL
+CURLOPT_CLOSESOCKETFUNCTION
 CURLOPT_COOKIE
 CURLOPT_COOKIEFILE
 CURLOPT_COOKIEJAR
@@ -163,17 +190,20 @@ CURLOPT_FAILONERROR
 CURLOPT_HEADER
 CURLOPT_HEADERDATA
 CURLOPT_HEADERFUNCTION
+CURLOPT_HSTS
+CURLOPT_HSTS_CTRL
 CURLOPT_HTTPGET
 CURLOPT_HTTPHEADER
 CURLOPT_HTTPPOST
 CURLOPT_IPRESOLVE
-CURLOPT_MAXFILE_LARGE
+CURLOPT_MAXFILESIZE_LARGE
 CURLOPT_MAXREDIRS
 CURLOPT_MIMEPOST
 CURLOPT_NOBODY
 CURLOPT_NOPROGRESS
 CURLOPT_OPENSOCKETDATA
 CURLOPT_OPENSOCKETFUNCTION
+CURLOPT_PIPEWAIT
 CURLOPT_POST
 CURLOPT_POSTFIELDS
 CURLOPT_POSTFIELDSIZE
@@ -215,11 +245,15 @@ CURLUPART_USER
 debian
 Debug callback
 development
+DICT
+Edge
 environment variables
+ETag
 etiquette
 event-driven
 Firefox
 Fragment
+FTPS
 future
 git
 Globbing
@@ -229,8 +263,10 @@ GOPHERS
 Header callback
 homebrew
 Host:
+HSTS
 HTTP ranges
 HTTP redirects
+HTTP Strict Transport Security
 HTTP/1.1
 HTTP/2
 HTTP/3
@@ -250,12 +286,13 @@ libidn2
 libpsl
 libressl
 librtmp
+libssh
 libssh2
 license
-MesaLink
 MIT
 MITM-proxies
 MQTT
+mTLS
 multi-threading
 name resolving
 nghttp2
@@ -303,6 +340,8 @@ RFC 959
 roadmap
 RTMP
 RTSP
+rustls
+rustls-ffi
 Safari
 Schannel
 Scheme
@@ -320,6 +359,7 @@ SSLKEYLOGFILE
 STARTTLS
 TELNET
 testing
+TFTP
 TLS
 TLS backend
 TODO
@@ -328,8 +368,10 @@ Ubuntu
 URL Globbing
 Vulnerability
 Wireshark
+wolfssh
 wolfSSH
 wolfSSL
 Write callback
 yum
 zlib
+zstd

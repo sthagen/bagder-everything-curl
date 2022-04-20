@@ -6,6 +6,8 @@ the latest version shipped by the curl project, download the latest official
 curl release for Windows from
 [curl.se/windows](https://curl.se/windows/) and install that.
 
-## Get libcurl for Windows
+There are several different ways to get curl and libcurl onto your Windows
+systems:
 
-TBD
+1. [MSYS2](win-msys2.md)
+2. [vcpkg](win-vcpkg.md)

@@ -2,7 +2,7 @@
 
 multi_socket is the extra spicy version of the regular multi interface and is
 designed for event-driven applications. Make sure you read the [Drive with
-multi interface](libcurl-drive-multi.md) section first.
+multi interface](multi.md) section first.
 
 multi_socket supports multiple parallel transfers—all done in the same
 single thread—and have been used to run several tens of thousands of
@@ -24,8 +24,8 @@ the sockets.
 There are numerous event based systems to select from out there, and libcurl
 is completely agnostic to which one you use. libevent, libev and libuv are
 three popular ones but you can also go directly to your operating system's
-native solutions such as epoll, kqueue, /dev/poll, pollset, Event Completion
-or I/O Completion Ports.
+native solutions such as epoll, kqueue, /dev/poll, pollset or Event
+Completion.
 
 ## Many easy handles
 
@@ -35,7 +35,8 @@ want to perform.
 
 You can add them at any time while the transfers are running and you can also
 similarly remove easy handles at any time using the `curl_multi_remove_handle`
-call. Typically though, you remove a handle only after its transfer is completed.
+call. Typically though, you remove a handle only after its transfer is
+completed.
 
 ## multi_socket callbacks
 

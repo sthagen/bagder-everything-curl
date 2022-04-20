@@ -18,8 +18,8 @@ make anything else you help out with land in the proper place. We will make sure
 improved code and docs get merged into the source tree properly and other
 sorts of contributions are suitable received.
 
-Send your contributions on a [mailing list](curl-comm.md), file an issue or
-submit a pull request.
+Send your contributions on a [mailing list](../project/comm.md), file an issue
+or submit a pull request.
 
 ### Suggestions
 
@@ -45,7 +45,7 @@ current protocols, especially features that popular clients or browsers have
 but that curl still lacks.
 
 Of course, you can also add contents to the project that is not code, like
-documentation, graphics or web site contents, but the general rules apply
+documentation, graphics or website contents, but the general rules apply
 equally to that.
 
 If you are fixing a problem you have or a problem that others are reporting, we
@@ -104,11 +104,11 @@ A popular and convenient way to make your own changes and contribute them back
 to the project is by doing a so-called pull request on GitHub.
 
 First, you create your own version of the source tree, called a fork, on the
-Github web site. That way you get your own version of the curl git tree that
+Github website. That way you get your own version of the curl git tree that
 you can clone to a local copy.
 
 You edit your own local copy, commit the changes, push them to the git
-repository on Github and then on the Github web site you can select to create
+repository on Github and then on the Github website you can select to create
 a pull request based on your changes done to your local repository clone of
 the original curl repository.
 
@@ -129,7 +129,7 @@ upstream.
 
 Once your commits are fine enough to get sent to the mailing list, you just
 create patches with `git format-patch` and send them away. Even more fancy
-users go directly to `git send-email` and have git send the e-mail itself.
+users go directly to `git send-email` and have git send the email itself.
 
 ### git commit style
 
@@ -150,8 +150,9 @@ ask you to use:
     [whatever-else-by: credit all helpers, finders, doers]
 
 Do not forget to use `git commit --author="Jane Doe <jane@example.com>"` if
-you commit someone else's work, and make sure that you have your own Github username and
-e-mail setup correctly in git before you commit via commands below:
+you commit someone else's work, and make sure that you have your own Github
+username and email setup correctly in git before you commit via commands
+below:
 
     git config --global user.name "johndoe"
     git config --global user.email "johndoe@example.com"
@@ -176,8 +177,8 @@ to be pushed by a trusted person.
 The core team is a small set of curl developers who have been around for
 several years and have shown they are skilled developers and that they fully
 comprehend the values and the style of development we do in this project. They
-are some of the people listed in the [The development team](curl-devteam.md)
-section.
+are some of the people listed in the [The development
+team](../project/devteam.md) section.
 
 You can always bring a discussion to the mailing list and argue why you think
 your changes should get accepted, or perhaps even object to other changes that

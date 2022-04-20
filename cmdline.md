@@ -38,7 +38,7 @@ One way that command-line systems differ, for example, is how you can put
 quotes around arguments such as to embed spaces or special symbols. In
 most Unix-like shells you use double quotes (") and single quotes (')
 depending if you want to allow variable expansions or not within the quoted
-string, but on Windows there's no support for the single quote version.
+string, but on Windows there is no support for the single quote version.
 
 In some environments, like PowerShell on Windows, the authors of the command
 line system decided they know better and "help" the user to use another tool
@@ -50,9 +50,10 @@ PowerShell, you need to type in its full name including the extension:
 Different command-line environments will also have different maximum command
 line lengths and force the users to limit how large amount of data that can be
 put into a single line. curl adapts to this by offering a way to provide
-command-line options through a file—or from stdin—using the -K option.
+command-line options through a file—or from stdin—using the [-K
+option](cmdline/configfile.md).
 
-## Garbage in, garbage out
+## Garbage in gives garbage out
 
 curl has little will of its own. It tries to please you and your wishes to a
 large extent. It also means that it will try to play with what you give it. If

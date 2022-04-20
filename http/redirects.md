@@ -40,16 +40,16 @@ response” to the original request rather than just a redirect.
 These three codes were the only redirect codes in the HTTP/1.0 spec.
 
 curl however, does not remember or cache any redirects at all so to it,
-there's really no difference between permanent and temporary redirects.
+there is really no difference between permanent and temporary redirects.
 
 ## Tell curl to follow redirects
 
 In curl's tradition of only doing the basics unless you tell it differently,
-it does not follow HTTP redirects by default. Use the `-L, --location` to tell
-it to do that.
+it does not follow HTTP redirects by default. Use the `-L, --location` option
+to tell it to do that.
 
 When following redirects is enabled, curl will follow up to 50 redirects by
-default. There's a maximum limit mostly to avoid the risk of getting caught in
+default. There is a maximum limit mostly to avoid the risk of getting caught in
 endless loops. If 50 is not sufficient for you, you can change the maximum
 number of redirects to follow with the `--max-redirs` option.
 
@@ -103,13 +103,13 @@ control that behavior with the `CURLOPT_POSTREDIR` option.
 ## Redirecting to other host names
 
 When you use curl you may provide credentials like user name and password for
-a particular site, but since a HTTP redirect might move away to a different
+a particular site, but since an HTTP redirect might move away to a different
 host curl limits what it sends away to other hosts than the original within
 the same transfer.
 
 So if you want the credentials to also get sent to the following host names
 even though they are not the same as the original—presumably because you
-trust them and know that there's no harm in doing that—you can tell curl that
+trust them and know that there is no harm in doing that—you can tell curl that
 it is fine to do so by using the `--location-trusted` option.
 
 # Non-HTTP redirects
@@ -129,9 +129,9 @@ of these kinds of redirects.
 
 ## JavaScript redirects
 
-The modern web is full of JavaScript and as you know, JavaScript is a
-language and a full runtime that allows code to execute in the browser when
-visiting web sites.
+The modern web is full of JavaScript and as you know, JavaScript is a language
+and a full runtime that allows code to execute in the browser when visiting
+websites.
 
 JavaScript also provides means for it to instruct the browser to move on to
 another site—a redirect, if you will.

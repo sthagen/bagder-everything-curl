@@ -1,6 +1,6 @@
 # Alternative Services
 
-[RFC 7838](https://www.rfc-editor.org/rfc/rfc7838.txt) defines a HTTP header
+[RFC 7838](https://www.rfc-editor.org/rfc/rfc7838.txt) defines an HTTP header
 which lets a server tell a client that there is one or more *alternatives* for
 that server at "another place" with the use of the `Alt-Svc:` response header.
 
@@ -15,15 +15,15 @@ alt-svc cache file like this:
 
     curl --alt-svc altcache.txt https://example.com/
 
-... then curl will load existing alternative service entries from the file at
+then curl will load existing alternative service entries from the file at
 start-up and consider those when doing HTTP requests, and if the servers sends
 new or updated `Alt-Svc:` headers, curl will store those in the cache at exit.
 
 ## The alt-svc cache
 
-The alt-svc cache is very similar to a cookie jar. It is a text based file
-that stores one alternative per line and each entry also has an expiry time
-for which duration that particular alternative is valid.
+The alt-svc cache is similar to a cookie jar. It is a text based file that
+stores one alternative per line and each entry also has an expiry time for
+which duration that particular alternative is valid.
 
 ## HTTPS only
 

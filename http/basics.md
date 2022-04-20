@@ -1,7 +1,7 @@
 ### HTTP protocol basics
  
-(This assumes you have read the [Network and protocols](protocols.md) section
-or are otherwise already familiar with protocols.)
+(This assumes you have read the [Network and protocols](../protocols.md)
+section or are otherwise already familiar with protocols.)
 
 HTTP is a protocol that is easy to learn the basics of. A client connects to a
 server—and it is always the client that takes the initiative—sends a
@@ -46,7 +46,7 @@ A server always responds to an HTTP request unless something is wrong.
 
 ### The URL converted to a request
 
-So when a HTTP client is given a URL to operate on, that URL is then used,
+So when an HTTP client is given a URL to operate on, that URL is then used,
 picked apart and those parts are used in various places in the outgoing
 request to the server. Let's take the an example URL:
 
@@ -61,19 +61,3 @@ request to the server. Let's take the an example URL:
 
  - **/path/to/file** is used in the HTTP request to tell the server which exact
    document/resources curl wants to fetch
-
-### --path-as-is
-
-The path part of the URL is the part that starts with the first slash after
-the host name and ends either at the end of the URL or at a '?' or '#'
-(roughly speaking).
-
-If you include substrings including `/../` or `/./` in the path, curl will
-automatically squash them before the path is sent to the server, as is
-dictated by standards and how such strings tend to work in local file
-systems. The `/../` sequence will remove the previous section so that
-`/hello/sir/../` ends up just `/hello/` and `/./` is simply removed so that
-`/hello/./sir/` becomes `/hello/sir/`.
-
-To *prevent* curl from squashing those magic sequences before they are sent to
-the server and thus allow them through, the `--path-as-is` option exists.

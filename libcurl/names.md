@@ -1,14 +1,14 @@
 # Name resolving
 
 Most transfers libcurl can do involves a name that first needs to be
-translated to an Internet address. That's "name resolving". Using a numerical
+translated to an Internet address. That is "name resolving". Using a numerical
 IP address directly in the URL usually avoids the name resolve phase, but in
 many cases it is not easy to manually replace the name with the IP address.
 
 libcurl tries hard to [re-use an existing
-connection](libcurl-connectionreuse.md) rather than to create a new one. The
+connection](connectionreuse.md) rather than to create a new one. The
 function that checks for an existing connection to use is based purely on the
-name and is performed before any name resolving is attempted. That's one of
+name and is performed before any name resolving is attempted. That is one of
 the reasons the re-use is so much faster. A transfer using a reused connection
 will not resolve the host name again.
 
@@ -37,7 +37,7 @@ there will be no blocking calls involved.
 functions. They unfortunately make all transfers within a multi handle block
 during its operation and it is much harder to time out nicely.
 
-3. There's also support for resolving with the c-ares third party library,
+3. There is also support for resolving with the c-ares third party library,
 which supports asynchronous name resolving without the use of threads. This
 scales better to huge number of parallel transfers but it is not always 100%
 compatible with the native name resolver functionality.
@@ -69,7 +69,7 @@ cache for 60 seconds, but that value can be changed with
 The DNS cache is kept within the easy handle when `curl_easy_perform` is used,
 or within the multi handle when the multi interface is used. It can also be
 made shared between multiple easy handles using the [share
-interface](libcurl-sharing.md).
+interface](sharing.md).
 
 ## Custom addresses for hosts
 
@@ -94,7 +94,7 @@ following redirects etc.
 
 ## Name server options
 
-For libcurl built to use c-ares, there's a few options available that offer
+For libcurl built to use c-ares, there is a few options available that offer
 fine-grained control of what DNS servers to use and how. This is limited to
 c-ares build purely because these are powers that are not available when the
 standard system calls for name resolving are used.

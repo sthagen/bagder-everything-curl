@@ -1,7 +1,7 @@
 ## Reporting vulnerabilities
 
 All known and public curl or libcurl related vulnerabilities are listed on
-[the curl web site security page](https://curl.se/docs/security.html).
+[the curl website security page](https://curl.se/docs/security.html).
 
 Security vulnerabilities should not be entered in the project's public bug
 tracker unless the necessary configuration is in place to limit access to the
@@ -27,7 +27,7 @@ announcement.
   security vulnerability in curl or libcurl are ignored and no further action
   is required.
 
-- A person in the security team sends an e-mail to the original reporter to
+- A person in the security team sends an email to the original reporter to
   acknowledge the report.
 
 - The security team investigates the report and either rejects it or accepts
@@ -78,7 +78,7 @@ announcement.
   the same manner we always announce releases—it gets sent to the
   curl-announce, curl-library and curl-users mailing lists.
 
-- The security web page on the web site should get the new vulnerability
+- The security web page on the website should get the new vulnerability
   mentioned.
 
 ### curl-security@haxx.se

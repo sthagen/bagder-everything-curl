@@ -1,11 +1,11 @@
 # Copy as curl
 
-Using curl to perform an operation a user just managed to do with his or her
-browser is one of the more common requests and areas people ask for help
-about.
+Using curl to reproduce an operation a user just managed to do with his or her
+browser is a common request and area people ask for help about.
 
 How do you get a curl command line to get a resource, just like the browser
-would get it, nice and easy? Chrome, Firefox and Safari all have this feature.
+would get it, nice and easy? Chrome, Firefox, Edge and Safari all have this
+feature.
 
 ## From Firefox
 
@@ -19,15 +19,15 @@ installations.
 
 ![copy as curl with Firefox](firefox-copy-as-curl.png)
 
-## From Chrome
+## From Chrome and Edge
 
-When you pop up the More tools->Developer mode in Chrome, and you select the
-Network tab you see the HTTP traffic used to get the resources of the site. On
-the line of the specific resource you are interested in, you right-click with
-the mouse and you select "Copy as cURL" and it will generate a command line
-for you in your clipboard. Paste that in a shell to get a curl command line
-that makes the transfer. This feature is available by default in all Chrome and
-Chromium installations.
+When you pop up the More tools->Developer mode in Chrome or Edge, and you
+select the Network tab you see the HTTP traffic used to get the resources of
+the site. On the line of the specific resource you are interested in, you
+right-click with the mouse and you select "Copy as cURL" and it will generate
+a command line for you in your clipboard. Paste that in a shell to get a curl
+command line that makes the transfer. This feature is available by default in
+all Chrome and Chromium installations.
 
 ![copy as curl with Chrome](chrome-copy-as-curl.png)
 
