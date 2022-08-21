@@ -18,6 +18,8 @@ ascii
 asynch
 AsynchDNS
 auth
+autobuild
+autobuilds
 Autotools
 autotools
 backend
@@ -39,6 +41,7 @@ boringssl
 Boukris
 Broadcom
 brotli
+bugfix
 bugfixes
 buildconf
 CDN
@@ -72,7 +75,9 @@ COOKIEFILE
 CookieInfo
 cookiejar
 COOKIELIST
+CR
 CRL
+CRLF
 crt
 crypto
 cryptographic
@@ -151,11 +156,13 @@ Fortnite
 FOSS
 FPL
 fread
+FreeBSD
 Frexx
 fseek
 FTPing
 fwrite
 gcc
+gdb
 Gergely
 getaddrinfo
 gethostname
@@ -248,6 +255,7 @@ LDAP
 ldap
 LDAPS
 ldaps
+LF
 libc
 libcurl
 libcurl's
@@ -271,6 +279,7 @@ libz
 libzstd
 linux
 localhost
+logfile
 lookups
 LSB
 lseek
@@ -348,6 +357,7 @@ parsers
 PASV
 PEM
 perl
+permafailing
 PKGBUILD
 pluggable
 pollset
@@ -359,6 +369,7 @@ PowerShell
 pre
 prebuilt
 precompiled
+preprocess
 preprocessed
 preprocessor
 Prereq
@@ -398,12 +409,14 @@ RTMPS
 RTP
 RTSP
 rtsp
+runtests
 runtime
 Ruslan
 rustls
 Sagula
 SanDisk
 SAS
+SASL
 Satiro
 Schannel
 Schindelin
@@ -437,6 +450,7 @@ SOCKETFUNCTION
 socketopen
 sockopt
 SOCKOPT
+Solaris
 Soref
 SPNEGO
 Spotify
