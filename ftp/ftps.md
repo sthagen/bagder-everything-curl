@@ -17,7 +17,7 @@ in the clear. If no port number is specified in the URL, curl will use port
 ## Explicit FTPS
 
 The *explicit* way of doing FTPS is to keep using an `ftp://` URL, but
-instruct curl to upgrade the connection into a secure one using the `STARTTLS`
+instruct curl to upgrade the connection into a secure one using the `AUTH TLS`
 FTP command.
 
 You can tell curl to either *attempt* an upgrade and continue as usual if the
@@ -29,12 +29,12 @@ done - if any.
 ## Common FTPS problems
 
 The single most common problem with FTPS comes from the fact that the FTP
-protocol (that FTP still mostly uses) uses a separate connection setup for the
-data transfer. This connection is done to another port and when FTP is done
-over clear text (non-FTPS), firewalls and network inspectors etc can figure
-out that this is FTP in progress and they can adapt things and rules for the
-new connection.
+protocol (that FTPS transfers lean on) uses a separate connection setup for
+the data transfer. This connection is done to another port and when FTP is
+done over clear text (non-FTPS), firewalls and network inspectors etc can
+figure out that this is FTP in progress and they can adapt things and rules
+for the new connection.
 
-When everything is encrypted, with FTPS, firewalls cannot see what is going on
-and no outside can dynamically adapt network rules or permission based on
-this.
+When the FTP control channel is encrypted with TLS, firewalls cannot see what
+is going on and no outsider can dynamically adapt network rules or permission
+based on this.
