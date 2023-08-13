@@ -10,6 +10,7 @@
 --data-urlencode
 --etag-compare
 --etag-save
+--expand
 --fail
 --fail-with-body
 --ftp-method
@@ -77,6 +78,8 @@
 --trace
 --trace-ascii
 --trace-time
+--url-query
+--variable
 --verbose
 --version
 --write-out
@@ -302,7 +305,6 @@ name resolving
 nghttp2
 nix
 NPN
-NSS
 openldap
 OpenSSL
 PAC
@@ -368,8 +370,10 @@ TLS
 TLS backend
 TODO
 transfer-encoding
+trurl
 Ubuntu
 URL Globbing
+variables
 Vulnerability
 Wireshark
 wolfssh

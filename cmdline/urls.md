@@ -13,19 +13,16 @@ Where curl accepts a “URL” as input, it is then really a “URI”. Most of 
 protocols curl understands also have a corresponding URI syntax document that
 describes how that particular URI format works.
 
-curl assumes that you give it a valid URL and it only does limited checks of
-the format in order to extract the information it deems necessary to perform
-its operation. You can, for example, most probably pass in illegal characters
-in the URL without curl noticing or caring and it will just pass them on.
-
 * [Scheme](urls/scheme.md)
 * [Name and password](urls/auth.md)
 * [Host](urls/host.md)
 * [Port number](urls/port.md)
 * [Path](urls/path.md)
+* [Query](urls/query.md)
 * [FTP type](urls/ftptype.md)
 * [Fragment](urls/fragment.md)
 * [Browsers' address bar](urls/browsers.md)
 * [Many options and URLs](urls/options.md)
 * [Connection reuse](urls/connreuse.md)
 * [Parallel transfers](urls/parallel.md)
+* [trurl](urls/trurl.md)
