@@ -1,4 +1,4 @@
-# HTTP upload
+# Upload
 
 Uploads over HTTP can be done in many different ways and it is important to
 notice the differences. They can use different methods, like POST or PUT, and
@@ -18,8 +18,7 @@ server. With libcurl you normally provide that data as a pointer and a length:
     curl_easy_setopt(easy, CURLOPT_POSTFIELDSIZE, (long)datalength);
 
 Or you tell libcurl that it is a post but would prefer to have libcurl instead
-get the data by using the regular [read
-callback](../libcurl/callbacks/read.md):
+get the data by using the regular [read callback](../libcurl/callbacks/read.md):
 
     curl_easy_setopt(easy, CURLOPT_POST, 1L);
     curl_easy_setopt(easy, CURLOPT_READFUNCTION, read_callback);

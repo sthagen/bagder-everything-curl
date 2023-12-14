@@ -1,4 +1,4 @@
-# Build
+# Build curl
 
 The source code for this project is written in a way that allows it to get
 compiled and built on just about any operating system and platform, with as
@@ -68,9 +68,8 @@ running `autoreconf -fi` and on Windows, run `buildconf.bat`.
 ## On Linux and Unix-like systems
 
 There are two distinctly different ways to build curl on Linux and other
-Unix-like systems; there is the one using [the configure
-script](build/autotools.md) and there is [the CMake
-approach](build/cmake.md).
+Unix-like systems; there is the one using [the configure script](build/autotools.md)
+and there is [the CMake approach](build/cmake.md).
 
 There are two different build environments to cater to people's different
 opinions and tastes. The configure-based build is arguably the more mature and

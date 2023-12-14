@@ -1,4 +1,4 @@
-# Get a simple HTML page
+# Get a simple HTTP page
 
 This example just fetches the HTML from a given URL and sends it to
 stdout. Possibly the simplest libcurl program you can write.
@@ -7,8 +7,8 @@ By replacing the URL this will of course be able to get contents over other
 supported protocols as well.
 
 Getting the output sent to stdout is a default behavior and usually not what
-you actually want. Most applications will instead install a [write
-callback](../callbacks/write.md) to have receive the data that arrives.
+you actually want. Most applications will instead install a
+[write callback](../callbacks/write.md) to have receive the data that arrives.
 
     #include <stdio.h>
     #include <curl/curl.h>
