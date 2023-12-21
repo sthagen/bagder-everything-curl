@@ -143,6 +143,7 @@ etag
 ETag
 ETags
 exe
+executables
 extensibility
 Falkeborn
 Fandrich
@@ -249,6 +250,7 @@ Kaufmann
 keepalive
 Keil
 Kirei
+Kinoite
 Knauf
 kqueue
 Krb
@@ -439,12 +441,14 @@ SEK
 selectable
 Serv
 setopt
+Sericea
 SFTP
 sftp
 sha
 singlecwd
 Sintonen
 sizeof
+Silverblue
 SLE
 slist
 sln
