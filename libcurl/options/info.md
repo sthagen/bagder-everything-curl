@@ -7,7 +7,7 @@ the option.
 
 ## Iterate over all options
 
-A modern libcurl supports nearly 300 different options. With the use of
+Modern libcurl supports over 300 different options. With the use of
 `curl_easy_option_by_next()` an application can iterate over all the known
 options and return a pointer to a `struct curl_easyoption` for them.
 
@@ -48,7 +48,7 @@ An application can ask libcurl for the name of the `CURLOPT_VERBOSE` option
 like this:
 
     const struct curl_easyoption *opt =
-      curl_easy_option_by_id(CURLOP_VERBOSE);
+      curl_easy_option_by_id(CURLOPT_VERBOSE);
     if(opt) {
       printf("This option has the name: %s\n", opt->name);
     }
