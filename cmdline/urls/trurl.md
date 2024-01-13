@@ -82,7 +82,8 @@ trurl.
 
 **Remove tracking tuples from query:**
 
-    $ trurl "https://curl.se?search=hey&utm_source=tracker" --trim query="utm_*"
+    $ trurl "https://curl.se?search=hey&utm_source=tracker" \
+      --trim query="utm_*"
     https://curl.se/?search=hey
 
 **Show a specific query key value:**
@@ -97,7 +98,8 @@ trurl.
 
 **Work with a query that uses a semicolon separator:**
 
-    $ trurl "https://curl.se?search=fool;page=5" --trim query="search" --query-separator ";"
+    $ trurl "https://curl.se?search=fool;page=5" --trim query="search" \
+      --query-separator ";"
     https://curl.se?page=5
 
 **Accept spaces in the URL path:**
