@@ -44,7 +44,7 @@ which type of POST to use at your own whim but it entirely depends on what the
 receiving server end expects and can handle.
 
 HTTP multipart formposts are done with `-F`. See the detailed description in
-the [HTTP multipart formposts](../http/multipart.md) chapter.
+the [HTTP multipart formposts](../http/post/multipart.md) chapter.
 
 ### PUT
 
@@ -83,7 +83,7 @@ as curl does not add any at all.
 
     curl -T mail smtp://mail.example.com/ --mail-from user@example.com
 
-Learn more about using SMTP with curl in the [Using curl/SMTP](smtp.md) section.
+Learn more about using SMTP with curl in the [Sending email](smtp.md) section.
 
 ## Progress meter for uploads
 
