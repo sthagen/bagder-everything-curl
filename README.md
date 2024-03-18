@@ -34,10 +34,13 @@ book. It features the book online in a web version.
 
 This book is also provided as a [PDF](https://daniel.haxx.se/everything-curl/everything-curl.pdf) and an [ePUB](https://daniel.haxx.se/everything-curl/everything-curl.epub).
 
+The book website is hosted by Fastly. The book contents is rendered by
+[mdBook](https://github.com/rust-lang/mdBook) since March 18th, 2024.
+
 ## Content
 
 All book content is hosted on GitHub in the
-[https://github.com/bagder/everything-curl](https://github.com/bagder/everything-curl)
+[https://github.com/curl/everything-curl](https://github.com/curl/everything-curl)
 repository.
 
 ## Author
@@ -55,8 +58,8 @@ please send us a refreshed version of the affected paragraph and we will amend
 and update. We give credit to and recognize everyone who helps out.
 
 Preferably, you could submit
-[errors](https://github.com/bagder/everything-curl/issues) or [pull
-requests](https://github.com/bagder/everything-curl/pulls) on the book's
+[errors](https://github.com/curl/everything-curl/issues) or [pull
+requests](https://github.com/curl/everything-curl/pulls) on the book's
 GitHub page.
 
 ## Contributors
