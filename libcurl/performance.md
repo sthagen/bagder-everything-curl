@@ -19,7 +19,7 @@ sessions, use its DNS cache as much as possible and more.
 
 If you download data, set the `CURLOPT_BUFFERSIZE` to a suitable size. It is
 on the smaller size from start and especially on high speed transfers, you
-might be able to get more out of libcurl by increase its size. We encourage
+might be able to get more out of libcurl by increasing its size. We encourage
 you to try out a few sizes in a benchmark with your use case.
 
 Similarly, if you upload data you might want to adjust the
@@ -32,6 +32,14 @@ The number of live connections kept in the connection pool that you set with
 your application uses connections, but if it for example iterates over N
 hostnames in a short period of time, it could make sense for you to make sure
 that libcurl can keep all those connections alive.
+
+## CA store caching
+
+For every new connection done using TLS, libcurl needs to access the CA store
+to verify the remote server's certificate. If your applications do many
+connections, make sure you take advantage of libcurl's CA caching so that
+libcurl can avoid loading and parsing several hundred kilobytes from disk over
+and over. This is however not yet supported by all TLS backends.
 
 ## make callbacks as fast as possible
 
