@@ -21,6 +21,7 @@
 --ftp-port
 --ftp-skip-pasv-ip
 --get
+--happy-eyeballs-timeout-ms
 --haproxy-clientip
 --haproxy-protocol
 --header
@@ -366,6 +367,7 @@ RFC 2229
 RFC 2246
 RFC 2326
 RFC 2595
+RFC 2616
 RFC 2818
 RFC 3207
 RFC 3501
@@ -418,6 +420,7 @@ URL Globbing
 URL parser
 variables
 Vulnerability
+wcurl
 Wireshark
 wolfssh
 wolfSSH
