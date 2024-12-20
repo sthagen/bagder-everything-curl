@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Everything curl](README.md)
 * [How to read](how-to-read.md)
 * [The cURL project](project/README.md)
   * [How it started](project/started.md)
@@ -56,6 +56,7 @@
     * [Long options](cmdline/options/long.md)
     * [Arguments to options](cmdline/options/args.md)
     * [Negative options](cmdline/options/negative.md)
+  * [Help](cmdline/help.md)
   * [Options depend on version](cmdline/versions.md)
   * [URLs](cmdline/urls/README.md)
     * [Scheme](cmdline/urls/scheme.md)
@@ -72,7 +73,6 @@
     * [Connection reuse](cmdline/urls/connreuse.md)
     * [Parallel transfers](cmdline/urls/parallel.md)
     * [trurl](cmdline/urls/trurl.md)
-  * [List options](cmdline/listopts.md)
   * [Config file](cmdline/configfile.md)
   * [Variables](cmdline/variables.md)
   * [Passwords](cmdline/passwords.md)
@@ -104,6 +104,7 @@
     * [Rate limiting](usingcurl/transfers/rate-limiting.md)
     * [Request rate limiting](usingcurl/transfers/request-rate.md)
     * [Compression](usingcurl/transfers/compression.md)
+    * [Skip download if already done](usingcurl/transfers/skip.md)
   * [Connections](usingcurl/connections/README.md)
     * [VLAN](usingcurl/connections/vlan.md)
     * [Name resolve tricks](usingcurl/connections/name.md)
