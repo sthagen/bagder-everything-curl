@@ -2,6 +2,7 @@
 --alt-svc
 --anyauth
 --append
+--aws-sigv4
 --basic
 --ca-native
 --compressed
@@ -32,6 +33,7 @@
 --http2-prior-knowledge
 --http3
 --http3-only
+--ip-tos
 --ipfs-gateway
 --json
 --keepalive-cnt
@@ -43,6 +45,7 @@
 --max-filesize
 --max-time
 --metalink
+--mptcp
 --negotiate
 --netrc-file
 --netrc-optional
@@ -120,6 +123,7 @@
 ALPN
 apt
 Arch Linux
+AWS sigv4
 BearSSL
 bindings
 BoringSSL
@@ -340,6 +344,7 @@ MITM-proxies
 MQTT
 mTLS
 multi-threading
+Multipath TCP
 name resolving
 nghttp2
 nix
@@ -415,8 +420,10 @@ TFTP
 TLS
 TLS backend
 TODO
+Traffic Class
 transfer-encoding
 trurl
+Type of Service
 Ubuntu
 URL Globbing
 URL parser

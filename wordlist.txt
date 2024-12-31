@@ -108,6 +108,7 @@ CWD
 daniel
 DEBUGFUNCTION
 decrypt
+defacto
 deselectable
 detections
 dev
@@ -324,6 +325,7 @@ MITM
 mk
 Monnerat
 MPL
+MPTCP
 MQTT
 mqtt
 mqtts
@@ -337,6 +339,7 @@ MSYS
 msys
 mTLS
 multicwd
+Multipath
 MultiSSL
 mumbo
 mutex
@@ -464,6 +467,7 @@ setopt
 SFTP
 sftp
 sha
+sigv
 Silverblue
 singlecwd
 Sintonen
@@ -535,6 +539,7 @@ TODO
 Tomtom
 toolchains
 Torre
+TOS
 TrackMemory
 trurl
 Tse
