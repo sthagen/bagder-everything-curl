@@ -19,3 +19,6 @@ cryptography and digital signatures.
 * [TLS auth](tls/auth.md)
 * [TLS backends](tls/backends.md)
 * [SSLKEYLOGFILE](tls/sslkeylogfile.md)
+* [ECH](tls/ech.md)
+* [Built-in certificate store](tls/embedded-ca.md)
+* [TLS sessions and early data](tls/session.md)

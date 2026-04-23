@@ -128,6 +128,7 @@ downloader
 Dudka
 Dymond
 EBCDIC
+ECH
 EFnet
 eg
 EHLO
@@ -230,6 +231,7 @@ HTTPHEADER
 HTTPS
 https
 Huawei
+idempotency
 IDN
 IETF
 ifdef
@@ -318,6 +320,7 @@ Metalink
 Micha
 Michal
 MicroOS
+middleboxes
 mingw
 misconfigured
 Mishyn
@@ -389,6 +392,7 @@ PEM
 perl
 permafailing
 PKGBUILD
+plaintext
 pluggable
 pollset
 POSIX
@@ -418,8 +422,8 @@ QoS
 QUIC
 quictls
 Raad
-rc
 RBS
+rc
 READFUNCTION
 READONLYFILE
 rebase
@@ -444,6 +448,7 @@ RTMPS
 RTP
 RTSP
 rtsp
+RTT
 runpath
 runtests
 runtime
@@ -545,6 +550,7 @@ TrackMemory
 trurl
 Tse
 Tsujikawa
+TTFB
 TTL
 txt
 typedef
