@@ -106,6 +106,7 @@ CUSTOMREQUEST
 CVE
 CWD
 daniel
+DDoS
 DEBUGFUNCTION
 decrypt
 defacto
@@ -125,9 +126,11 @@ DNS
 dns
 DoH
 downloader
+DSA
 Dudka
 Dymond
 EBCDIC
+ECC
 ECH
 EFnet
 eg
@@ -261,6 +264,7 @@ Kamil
 Kaufmann
 keepalive
 Keil
+KEM
 Kinoite
 Kirei
 Knauf
@@ -269,6 +273,7 @@ Krb
 krb
 kubernetes
 Kuhrt
+Kyber
 Largefile
 LASTSOCKET
 LDAP
@@ -289,7 +294,6 @@ Libre
 libre
 LibreSSL
 libressl
-librtmp
 libs
 libssh
 libSSH
@@ -359,6 +363,7 @@ Netware
 nghttp
 ngtcp
 Nikos
+NIST
 nitems
 NixOS
 NLST
@@ -400,6 +405,7 @@ Postfix
 POSTing
 POSTs
 PowerShell
+PQC
 pre
 prebuilt
 precompiled
@@ -442,9 +448,7 @@ ROADMAP
 Rockbox
 roffit
 rpath
-RTMP
-rtmp
-RTMPS
+RSA
 RTP
 RTSP
 rtsp
@@ -596,7 +600,6 @@ whitespace
 WinSock
 WinSSL
 Wireshark
-wolfSSH
 wolfSSL
 WS
 WSS
