@@ -4,7 +4,7 @@ The source code for this project is written in a way that allows it to be
 compiled and built on just about any operating system and platform, with as
 few restraints and requirements as possible.
 
-If you have a 32bit (or larger) CPU architecture, if you have a C89 compliant
+If you have a 32-bit (or larger) CPU architecture, if you have a C89 compliant
 compiler and if you have roughly a POSIX supporting sockets API, then you can
 most likely build curl and libcurl for your target system.
 
@@ -83,7 +83,7 @@ mentioned ways, [the CMake approach](cmake.md) and using
 [configure](autotools.md) with msys work, but the more popular and
 common methods are probably building with Microsoft's Visual Studio compiler
 using either `nmake` or project files. See the build on
-[windows](windows.md) section.
+[Windows](windows.md) section.
 
 ## Learn more
 
